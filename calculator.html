@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator </h1>
+        <form action="" name="calc" class="calculator">
+            <input type="text" class="value" name="answer">
+            <span class="num clear" onclick="calc.answer.value=''"><i>C</i></span>
+            <span class="num" onclick="calc.answer.value+='/'"><i>/</i></span>
+            <span class="num" onclick="calc.answer.value+='*'"><i>*</i></span>
+            <span class="num" onclick="calc.answer.value+='7'"><i>7</i></span>
+            <span class="num" onclick="calc.answer.value+='8'"><i>8</i></span>
+            <span class="num" onclick="calc.answer.value+='9'"><i>9</i></span>
+            <span class="num" onclick="calc.answer.value+='-'"><i>-</i></span>
+            <span class="num" onclick="calc.answer.value+='4'"><i>4</i></span>
+            <span class="num" onclick="calc.answer.value+='5'"><i>5</i></span>
+            <span class="num" onclick="calc.answer.value+='6'"><i>6</i></span>
+            <span class="num plus" onclick="calc.answer.value+='+'"><i>+</i></span>
+            <span class="num" onclick="calc.answer.value+='1'"><i>1</i></span>
+            <span class="num" onclick="calc.answer.value+='2'"><i>2</i></span>
+            <span class="num" onclick="calc.answer.value+='3'"><i>3</i></span>
+            <span class="num" onclick="calc.answer.value+='0'"><i>0</i></span>
+            <span class="num" onclick="calc.answer.value+='00'"><i>00</i></span>
+            <span class="num" onclick="calc.answer.value+='.'"><i>.</i></span>
+            <span class="num equal" onclick="document.calc.answer.value=eval(calc.answer.value)"><i>=</i></span>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
